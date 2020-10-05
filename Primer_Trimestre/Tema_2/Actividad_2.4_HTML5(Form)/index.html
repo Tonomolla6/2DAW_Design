@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actividad 2.3 FORM</title>
+</head>
+
+<body>
+    <h3>Informacion sobre el producto</h3>
+    <form>
+
+        <label for="name">Nombre Completo:</label>
+        <br>
+        <input type="text" name="name" required placeholder="Jane Doe"/>
+        <br>
+        <label for="email">Direccion de correo electronico:</label>
+        <br>
+        <input type="email" name="email" required/>
+        <br>
+        <label for="email2">Repite la direccion de correo electronico:</label>
+        <br>
+        <input type="email" name="email2" required/>
+        <br>
+        <label for="date">Fecha de llegada:</label>
+        <br>
+        <input type="date" name="date" required/>
+        <br>
+        <label for="number">Numero de noches (99,00 USD por habitacion y noche)</label>
+        <br>
+        <input type="number" min="1" name="number"/>
+        <br>
+        <label for="number2">Numero de personas (10,00 USD por persona adicional y noche)</label>
+        <br>
+        <input type="number" min="1" name="number2"/>
+        <br>
+        <p>Total estimado: 99,00 USD</p>
+        <br>
+        <label for="promo">Codigo promocional:</label>
+        <br>
+        <input type="text" name="promo" />
+        <br>
+        <input type="submit" value="Solictar reserva"/>
+</body>
+
+</html>
