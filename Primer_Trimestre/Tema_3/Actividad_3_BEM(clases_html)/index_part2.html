@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actividad 3 BEM</title>
+
+    <style>
+
+        form.form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form__input {
+            border: 1px solid #8080807a;
+        }
+
+        .form__input--box {
+            margin: 8px 0px;
+            padding: 7px 10px;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .form_text {
+            margin: 0;
+        }
+
+        .form_text--primary {
+            font-size: 12px;
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .form__span__checkbox {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .form__label--check {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .form__input--check {
+            background-color: grey;
+        }
+
+        .form_input--button {
+            width: 70px;
+            padding: 9px;
+            background-color: #008af8;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form class="form" action="">
+        <label class="form__label" for="email">Email Address</label>
+        <input class="form__input form__input--box" type="email" name="email" placeholder="Enter email">
+        <p class="form_text form_text--primary">We'll never share your email with anyone else.</p>
+
+        <label class="form__label" for="passwd">Password</label>
+        <input class="form__input form__input--box" type="password" name="passwd" placeholder="Password">
+
+        <span class="form__span__checkbox">
+            <label class="form__span__label form__label--check" for="check">Check me out</label>
+            <input class="form__span__input form__input--check" type="checkbox" name="check">
+        </span>
+
+        <input class="form_input form_input--button" type="submit" value="Submit"/>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actividad 3 BEM</title>
+
+    <style>
+        header.header {
+            width: 286px;
+            height: 180px;
+            background-color: gray;
+            border-radius: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header.header p.header__resulution {
+            color: white;
+            font-size: 20px;
+        }
+
+        section.section {
+            height: 180px;
+            width: 245px;
+            border: 0.01em solid #80808059;
+            padding: 20px 20px 0px 20px;
+        }
+
+        section.section h2.section__title {
+            margin: 0;
+            font-weight: lighter;
+        }
+
+        section.section p.section__text {
+            font-size: 15px;
+        }
+
+        section.section button.section__button {
+            color: white;
+            background-color: #2699ff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <article class="article">
+        <header class="header">
+            <p class="header__resulution">286x180</p>
+        </header>
+        <section class="section">
+            <h2 class="section__title">Card title</h2>
+            <p class="section__text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button class="section__button">Go somewhere</button>
+        </section>
+    </article>
+
+</body>
+
+</html>
