@@ -1,0 +1,17 @@
+body {
+    counter-reset: div parrafo;
+}
+  
+div::before {
+    counter-increment: div;
+    content: "Elemento div " counter(div) ": ";
+    font-weight: bold;
+    color: red;
+}
+
+p::before {
+    counter-increment: parrafo;
+    content: "Elemento p " counter(parrafo) ": ";
+    font-weight: bold;
+    color: green;
+}
