@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    background-color: #ff6347;
+    color: white;
+    padding: 5px;
+    width: calc(30vw - 4px);
+    height: calc(45vh - 4px);
+    margin: 1.8vh 1.2vw;
+    border: 2px solid black;
+    text-align: center;
+}
