@@ -1,0 +1,179 @@
+/* APLICATION BASE */
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+/* VARIABLES */
+    :root {
+        --color-primary: #2196f3;
+        --color-secundary: white;
+        --color-tertiary: black;
+    }
+
+/* WEBSITE */
+    main {
+        padding: 20px;
+        background-color: #e0e0e0;
+        display: flex;
+        min-height: calc(100vh - 140px);
+        margin-bottom: 100px;
+    }
+
+    /* SECTION LEFT */
+        .sectionleft {
+            width: calc(20vw - 30px);
+            margin-right: 10px;
+            background-color: white;
+            padding: 30px;
+            min-width: 230px;
+            min-height: 800px;
+        }
+
+        /* PROFILE SECTION LEFT */
+            .sectionleft__profile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sectionleft__profile__image {
+                width: 90%;
+                border-radius: 100%;
+            }
+
+            .sectionleft__profile__name {
+                font-family: 'Fjalla One', sans-serif;
+                font-size: 27px;
+                margin-top: 20px;
+            }
+
+            .sectionleft__profile__work {
+                color: var(--color-primary);
+            }
+
+            .sectionleft__profile__hr {
+                background-color: black;
+                border: none;
+                height: 0.15em;
+                margin-bottom: 1px;
+                width: 100%;
+                margin-top: 20px;
+            }
+        
+        /* DESCRIPTION SECTION LEFT */
+            .sectionleft__description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sectionleft__description__title {
+                margin: 20px 0px 5px 0px;
+            }
+
+            .sectionleft__description__text {
+                text-align: justify;
+            }
+
+        /* DOWNLOAD SECTION LEFT */
+            .sectionleft__download {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sectionleft__download__button {
+                background-color: var(--color-primary);
+                color: white;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                margin-top: 40px;
+                cursor: pointer;
+                border: 2px solid var(--color-primary);
+            }
+
+            .sectionleft__download__button:hover {
+                background-color: white;
+                color: var(--color-primary);
+            }
+
+            .sectionleft__download__text {
+                font-weight: bold;
+                margin-left: 10px;
+            }
+
+    /* SECTION RIGHT */
+        .sectionright {
+            width: 80vw;
+            margin-left: 10px;
+        }
+
+        .sectionright__browser {
+            background-color: white;
+            height: 70px;
+        }
+
+        .sectionright__browser__list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+
+        .sectionright__browser__list__elem {
+            /* flex-grow: 1; */
+            padding: 0px 2%;
+            height: 100%;
+            transition: height 0.2s;
+            cursor: pointer;
+        }
+
+        .sectionright__browser__list__elem__text {
+            color: black;
+            font-style: normal;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .sectionright__browser__list__elem:hover,
+        .sectionright__browser__list__elem--active {
+            height: 120%;
+            background-color: var(--color-primary);
+        }
+
+        .sectionright__browser__list__elem:hover > .sectionright__browser__list__elem__text,
+        .sectionright__browser__list__elem--active > .sectionright__browser__list__elem__text {
+            color: white;
+        }
+
+    /* FOOTER */
+        .footer {
+            position: absolute;
+            bottom: -100px;
+            background-color: rgb(19, 19, 19);
+            width: 100vw;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .footer__link {
+            color: var(--color-primary);
+        }
