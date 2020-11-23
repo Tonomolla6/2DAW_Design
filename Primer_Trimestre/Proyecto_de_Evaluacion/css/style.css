@@ -7,6 +7,7 @@
     body {
         position: relative;
         overflow-x: hidden;
+        font-family: Roboto-Light;
     }
 
 /* VARIABLES */
@@ -32,7 +33,7 @@
             background-color: white;
             padding: 30px;
             min-width: 230px;
-            min-height: 800px;
+            height: 900px;
         }
 
         /* PROFILE SECTION LEFT */
@@ -48,8 +49,8 @@
             }
 
             .sectionleft__profile__name {
-                font-family: 'Fjalla One', sans-serif;
-                font-size: 27px;
+                font-family: FjallaOne;
+                font-size: 30px;
                 margin-top: 20px;
             }
 
@@ -74,11 +75,13 @@
             }
 
             .sectionleft__description__title {
-                margin: 20px 0px 5px 0px;
+                margin: 20px 0px 10px 0px;
+                font-family: Roboto-Bold;
             }
 
             .sectionleft__description__text {
                 text-align: justify;
+                font-size: 17px;
             }
 
         /* DOWNLOAD SECTION LEFT */
@@ -120,6 +123,7 @@
         .sectionright__browser {
             background-color: white;
             height: 70px;
+            font-family: Roboto-Bold;
         }
 
         .sectionright__browser__list {
@@ -131,7 +135,6 @@
         }
 
         .sectionright__browser__list__elem {
-            /* flex-grow: 1; */
             padding: 0px 2%;
             height: 100%;
             transition: height 0.2s;
@@ -160,6 +163,112 @@
         .sectionright__browser__list__elem--active > .sectionright__browser__list__elem__text {
             color: white;
         }
+
+        /* COMPONENT */
+            .component {
+                width: calc(100% - 280px);
+                min-height: 250px;
+                background-color: white;
+                margin-top: 20px;
+                display: flex;
+                padding: 80px 140px;
+                justify-content: center;
+                position: relative;
+            }
+
+            .component__section {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                width: inherit;
+            }
+
+            .component__section__container{
+                position: relative;
+                margin-bottom: 30px;
+            }
+
+            .component__section__title {
+                font-size: 60px;
+                font-family: FjallaOne;
+            }
+
+            .component__section__title__background {
+                font-size: 100px;
+                font-family: FjallaOne;
+                position: absolute;
+                opacity: 0.1;
+                top: -35px;
+                left: -15px;
+            }
+
+            .component__section__description {
+                font-family: roboto-light;
+                color: #000000a3;
+                font-size: 22px;
+            }
+
+            .component__section__text {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+
+            .component__section__button {
+                background-color: var(--color-primary);
+                color: white;
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                margin-top: 40px;
+                cursor: pointer;
+                border: 2px solid var(--color-primary);
+                text-decoration: none;
+            }
+
+            .component__section__button:hover {
+                background-color: white;
+                color: var(--color-primary);
+            }
+
+            .component__section__button__text {
+                font-weight: bold;
+                margin-left: 10px;
+            }
+
+            .component__section__image {
+                width: 400px;
+                height: 366px;
+            }
+
+            .component__dot {
+                position: absolute;
+                right: 0;
+                top: calc(50% - 22px);
+                margin-right: 22px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .component__dot__elem {
+                margin: 2px 0px;
+                cursor: pointer;
+            }
+
+            .component__dot__elem:hover,
+            .component__dot__elem--active {
+                color: var(--color-primary);
+            }
+            
+            /* HOME */
+                .component--home {
+                    flex-direction: column;
+                }
+
+                .component__section--home {
+                    justify-content: center;
+                }
 
     /* FOOTER */
         .footer {
