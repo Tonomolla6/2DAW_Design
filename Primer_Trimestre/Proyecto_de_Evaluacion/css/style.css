@@ -369,6 +369,91 @@
                     display: block;
                 }
 
+            /* EDUCATION */
+                .component--education {
+                    flex-direction: column;
+                }
+
+                .component__section__standard {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .component__section__standard__component {
+                    width: 48%;
+                    margin: 1%;
+                    display: flex;
+                }
+
+                .component__section__standard__component__text {
+                    position: relative;
+                }
+
+                .component__section__standard__component__text__title {
+                    font-size: 27px;
+                }
+
+                .component__section__standard__component__text__description {
+                    font-size: 21px;
+                }
+
+                .component__section__standard__component__text__date {
+                    font-size: 17px;
+                    color: #999999;
+                    position: absolute;
+                    bottom: 0;
+                    font-weight: bold;
+                }
+
+                .component__section__standard__component__image {
+                    width: 120px;
+                    height: 120px;
+                    margin-right: 20px;
+                }
+
+                .component__section__standard__component__image__img {
+                    width: 120px;
+                    height: 120px;
+                }
+            
+            /* EXPERIENCE */
+                .component--experience {
+                    flex-direction: column;
+                }
+
+            /* CONTACT */
+                .component__section__form, .component__section__form__input {
+                    font-size: 20px;
+                    padding: 5px 10px;
+                    margin: 10px;
+                    width: 400px;
+                }
+
+                .component__section__form {
+                    width: 60vw;   
+                }
+
+                .component__section__form__input--textarea {
+                    width: 100%;
+                }
+
+                .component__section__form__input__button {
+                    width: 140px;
+                    height: 55px;
+                    font-size: 15px;
+                    border: none;
+                    background: var(--color-primary);
+                    color: white;
+                    font-size: 19px;
+                    cursor: pointer;
+                    border: 2px solid var(--color-primary);
+                }
+
+                .component__section__form__input__button:hover {
+                    background-color: white;
+                    color: var(--color-primary);
+                }
+
     /* FOOTER */
         .footer {
             position: absolute;
