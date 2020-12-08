@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.web {
+    background-color: black;
+    width: 500px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-rows: auto; */
+    grid-template-areas:
+    "alt level aux"
+    "oilpress level satcomm"
+    "oiltemp level acc"
+    "egt buttons radar"
+    "fuel buttons mp1";
+    padding: 30px 40px;
+}
+
+.web .button {
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+
+.web .button_red {
+    background-color: red;
+}
+
+.web .button_yellow {
+    background-color: yellow;
+}
+
+.web .level {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.web .level .bar {
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    row-gap: 3px;
+}
+
+.web .level .bar .statusbar {
+    background-color: #2b0000;
+    width: 50px;
+    height: 14px;
+    list-style: none;
+}
+
+.web .buttons {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(3, 1fr);
+    height: 150px;
+    row-gap: 2px;
+    align-self: center;
+}
+
+.web .buttons .empty {
+    background-color: yellow;
+    width: 23px;
+    justify-self: flex-end;
+}
+
+.web .buttons .button_down {
+    width: 100px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    opacity: 0.4;
+    justify-self: center;
+}
+
+.web .buttons .button_red_opacity {
+    background-color: red;
+}
+
+.web .buttons .button_yellow_opacity {
+    background-color: yellow;
+}
+
+.web .buttons .button_green_opacity {
+    background-color: lawngreen;
+}
+
+/* AREAS */
+
+.level {
+    grid-area: level;
+}
+
+.alt {
+    grid-area: alt;
+}
+
+.aux {
+    grid-area: aux;
+}
+
+.oilpress{
+    grid-area: oilpress;
+} 
+
+.satcomm {
+    grid-area: satcomm;
+}
+
+.oiltemp{
+    grid-area: oiltemp;
+} 
+
+.acc {
+    grid-area: acc;
+}
+
+.egt {
+    grid-area: egt;
+} 
+
+.radar{
+    grid-area: radar;
+}
+
+.fuel {
+    grid-area: fuel;
+} 
+
+.mp1 {
+    grid-area: mp1;
+}
+
+.buttons {
+    grid-area: buttons;
+}
