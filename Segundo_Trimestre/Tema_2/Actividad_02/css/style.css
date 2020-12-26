@@ -1,0 +1,29 @@
+:root{
+    --icon_href: url('../img/iconfinder_Hacker_anonymous_7023964.svg');
+}
+
+.card {
+    width: 460px;
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 17px;
+    margin: 0;
+}
+
+.card a {
+    margin: 5px;
+}
+
+.mailto::before {
+    background-image: var(--icon_href);
+    width: 25px;
+    height: 25px;
+    content: '';
+    display: inline-flex;
+    margin-right: 20px;
+}
