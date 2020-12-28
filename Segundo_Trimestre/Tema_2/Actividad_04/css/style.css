@@ -1,0 +1,27 @@
+:root{
+    --list_color: #FFEB3B;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 1px solid black;
+    width: 200px;
+}
+
+.card ul li {
+    margin: 10px 0px;
+}
+
+.section_1 li:nth-child(2),
+.section_2 li:nth-child(odd),
+.section_3 li:nth-child(3),
+.section_3 li:nth-child(6) {
+    background-color: var(--list_color);
+}
