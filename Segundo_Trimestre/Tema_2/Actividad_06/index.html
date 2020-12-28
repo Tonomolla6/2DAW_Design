@@ -6,7 +6,8 @@
     <title>box shadow :: CSS</title>
     <style media="screen">
         :root {
-            --box_shadow_caja: 10px 10px 0px 0px #aaa;
+            --gray: #aaa;
+            --box_shadow_caja: 10px 10px 0px 0px var(--gray);
             --box_shadow_caja2: 10px 10px 10px 0px black;
             --box_shadow_caja3: 3px 3px 0px 0px red, -10px -3px 10px 0px #6b8400;
             --box_shadow_caja4: 0px 0px 10px 3px yellow;
@@ -28,7 +29,7 @@
             margin-left: 40px;
             width: 400px;
             height: 100px;
-            background-color: #AAA;
+            background-color: var(--gray);
             box-shadow: var(--box_shadow_caja2);
         }
 
@@ -36,7 +37,7 @@
             margin-left: 40px;
             width: 400px;
             height: 100px;
-            background-color: #AAA;
+            background-color: var(--gray);
             box-shadow: var(--box_shadow_caja3);
         }
 
@@ -44,7 +45,7 @@
             margin-left: 40px;
             width: 400px;
             height: 100px;
-            background-color: #AAA;
+            background-color: var(--gray);
             box-shadow: var(--box_shadow_caja4);
         }
 
@@ -52,7 +53,7 @@
             margin-left: 40px;
             width: 400px;
             height: 100px;
-            background-color: #AAA;
+            background-color: var(--gray);
             box-shadow: inset var(--box_shadow_caja4);
         }
     </style>
