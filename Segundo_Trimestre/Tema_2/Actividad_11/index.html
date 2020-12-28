@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <title>Grid</title>
     <style media="screen">
+        :root {
+            --segundos: 1s;
+        }
+
         .transition {
-            transition: 1s;
+            transition: var(--segundos);
             border: 11px dotted black;
             width: 90px;
             height: 20px;
