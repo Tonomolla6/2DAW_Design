@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
+@font-face {
+    font-family: 'Audiowide';
+    src: url('../fonts/Audiowide-Regular.ttf') format('truetype');
+}
+
+:root {
+    --tipografia_1: 'Audiowide';
+    --tipografia_2: 'Hanalei Fill';
+}
+
+.ejemplo1 {
+    font-family: var(--tipografia_1);
+    font-size: 50px;
+    font-weight: 100;
+    font-variant: petite-caps;
+}
+
+.ejemplo2 {
+    font-family: var(--tipografia_2);
+    font-size: 70px;
+    font-style: oblique;
+}
+
+.ejemplo3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.ejemplo4 {
+    font-family: Arial;
+    font-size: 80px;
+    font-style: italic;
+}
