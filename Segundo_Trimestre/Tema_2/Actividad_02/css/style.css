@@ -1,5 +1,16 @@
 :root{
-    --icon_href: url('../img/iconfinder_Hacker_anonymous_7023964.svg');
+    --mail_href: url('../img/iconfinder_Hacker_anonymous_7023964.svg');
+    --zip_href: url('../img/file-archive-solid.svg');
+    --pdf_href: url('../img/file-pdf-solid.svg');
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
 }
 
 .card {
@@ -15,14 +26,40 @@
     margin: 0;
 }
 
-.card a {
+.card_m a {
     margin: 5px;
 }
 
 .mailto::before {
-    background-image: var(--icon_href);
+    background-image: var(--mail_href);
     width: 25px;
     height: 25px;
+    content: '';
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.pdf {
+    font-style: italic;
+}
+
+.pdf::before {
+    background-image: var(--pdf_href);
+    width: 18px;
+    height: 24px;
+    content: '';
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.zip {
+    font-weight: bold;
+}
+
+.zip::before {
+    background-image: var(--zip_href);
+    width: 18px;
+    height: 24px;
     content: '';
     display: inline-flex;
     margin-right: 20px;
