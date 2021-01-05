@@ -1,0 +1,49 @@
+:root {
+	--div_shadow: 13px 13px 10px 0px white;
+    --gradient: linear-gradient(300deg, rgba(0,0,0,0.4), white);
+}
+
+body {
+	background-color: #5c5c5ced;
+}
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background: var(--gradient);
+  background-size: 400% 400%;
+  position: relative;
+  animation: div 3s ease alternate infinite, color_div 4s ease alternate infinite;
+  box-shadow: var(--div_shadow);
+}
+
+h3 {
+	animation: rotate 10s ease alternate infinite, color_text 3s ease alternate infinite;    
+}
+
+@keyframes div {
+    0%   {left:0px; top:0px;}
+    50%  {left:200px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+@keyframes rotate {
+  0%   {transform:rotateX(0deg)}
+  25%  {transform:rotateX(360deg)}
+  50%  {transform:rotateX(0deg)}
+  75%  {transform:rotateX(360deg)}
+  100% {transform:rotateX(0deg)}
+}
+
+@keyframes color_text {
+  0%   {color:red}
+  50%  {color:white}
+  100% {color:black}
+}
+
+@keyframes color_div {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
