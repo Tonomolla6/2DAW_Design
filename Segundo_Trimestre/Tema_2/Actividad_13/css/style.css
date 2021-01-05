@@ -1,0 +1,36 @@
+:root{
+    --polygon: polygon(100% 0, 0 100%, 0 0);
+    --circle: circle(50%);
+    --ellipse: ellipse(27% 40%);
+    --inset: inset(10% 10% 10% 10% round 15px);
+    --border: 1px solid red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    width: auto;
+    border: var(--border);
+    margin: 30px;
+}
+
+.clip-css {
+    clip-path: var(--polygon);
+}
+
+.clip-css2 {
+    clip-path: var(--circle);
+}
+
+.clip-css3 {
+    clip-path: var(--ellipse);
+}
+
+.clip-css4 {
+    clip-path: var(--inset);
+}
