@@ -5,8 +5,8 @@
     }
 
     .mascara-0 {
-        -webkit-mask: url('../img/star-solid.svg');
-        mask: url('../img/star-solid.svg')
+        -webkit-mask: url('../img/plus-solid.svg');
+        mask: url('../img/plus-solid.svg')
     }
 
     .mascara-1 {
@@ -37,10 +37,10 @@
     }
 
     .mascara-4 {
-        -webkit-mask: url('svg1.svg');
+        -webkit-mask: url('../img/star-solid.svg');
         -webkit-mask-size: 100%;
         -webkit-mask-repeat: no-repeat;
-        mask: url('svg1.svg');
+        mask: url('../img/star-solid.svg');
         mask-size: 100%;
         mask-repeat: no-repeat;
     }
