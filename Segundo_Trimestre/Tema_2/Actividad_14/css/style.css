@@ -1,0 +1,49 @@
+@supports(-webkit-mask-image: url(#mask)) or (mask-image: url(#mask)) {
+    div {
+        display: inline-block;
+        margin: 30px;
+    }
+
+    .mascara-0 {
+        -webkit-mask: url('../img/star-solid.svg');
+        mask: url('../img/star-solid.svg')
+    }
+
+    .mascara-1 {
+        -webkit-mask: url('../img/star-solid.svg');
+        -webkit-mask-size: 20%;
+        -webkit-mask-repeat: repeat;
+        mask: url('../img/star-solid.svg');
+        mask-size: 20%;
+        mask-repeat: repeat;
+    }
+
+    .mascara-2 {
+        -webkit-mask: url('svg2.svg');
+        -webkit-mask-size: 60%;
+        -webkit-mask-repeat: repeat-x;
+        mask: url('svg2.svg');
+        mask-size: 60%;
+        mask-repeat: repeat-x;
+    }
+
+    .mascara-3 {
+        -webkit-mask: url('svg3.svg');
+        -webkit-mask-size: 40%;
+        -webkit-mask-repeat: repeat-y;
+        mask: url('svg3.svg');
+        mask-size: 40%;
+        mask-repeat: repeat-y;
+    }
+
+    .mascara-4 {
+        -webkit-mask: url('svg1.svg');
+        -webkit-mask-size: 100%;
+        -webkit-mask-repeat: no-repeat;
+        mask: url('svg1.svg');
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+    }
+
+/* code that requires mask-image here. */
+}
