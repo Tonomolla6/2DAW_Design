@@ -7,8 +7,6 @@
     .mascara-0 {
         -webkit-mask: url('../img/plus-solid.svg');
         mask: url('../img/plus-solid.svg');
-        -webkit-mask-size: 100%;
-        mask-size: 100%;
     }
 
     .mascara-1 {
