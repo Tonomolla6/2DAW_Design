@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 06</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background: black;
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        svg line {
+            stroke-width: 10;
+            stroke: rgb(0, 153, 255);
+            fill: none;
+            stroke-dasharray: 200;
+            -webkit-transition: all .6s;
+            transition: transform .6s;
+            transition-timing-function: linear;
+        }
+
+        div:hover svg line.top {
+            -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+        }
+
+        div:hover svg line.right {
+            -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+            transition-delay: .6s;
+        } 
+
+        div:hover svg line.bottom {
+            -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+            transition-delay: 1.2s;
+        }
+
+        div:hover svg line.left {
+            -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+            transition-delay: 1.8s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Si no haces hover no va, XD</p>
+    <div class="title">
+        <svg width="200" height="200">
+            <line class="top" x1="0" y1="0" x2="600" y2="0" />
+            <line class="left" x1="0" y1="200" x2="0" y2="-400" />
+            <line class="bottom" x1="200" y1="200" x2="-400" y2="200" />
+            <line class="right" x1="200" y1="0" x2="200" y2="600" />
+        </svg>
+    </div>
+</body>
+
+</html>
