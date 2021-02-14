@@ -60,8 +60,12 @@ body {
 
 @media only screen and (max-width: 760px) {
     .container {
-        display: flex;
-        flex-direction: column;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer"
     }
 
     .container header img {
@@ -97,5 +101,4 @@ body {
     .container aside {
         margin: 5px 0px;
     }
-
 }
