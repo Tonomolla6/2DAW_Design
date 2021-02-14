@@ -13,7 +13,8 @@ body {
   background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  min-height: 62px;
 }
 
 .main-nav {
@@ -35,12 +36,14 @@ body {
 .logo {
   display: inline-block;
   font-size: 22px;
-  margin: auto 20px;
+  position: absolute;
+  left: 21px;
+  top: 17px;
 }
 
 .navbar-toggle {
   position: absolute;
-  top: 10px;
+  top: 18px;
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
@@ -50,10 +53,6 @@ body {
 
 #chkToggle {
   display: none;
-}
-
-#chkToggle:checked + ul.main-nav {
-  display: block;
 }
 
 main {
@@ -84,15 +83,29 @@ h3 {
   display: none;
 }
 
-img {
-  /* */
-}
+@media screen and (max-width: 900px) {
+  .navbar-toggle {
+    display: block;
+  }
 
-@media screen and (min-width: 900px) {
-  #chkToggle {
-    display: flex;
+  .main-nav {
+    width: 100%;
+    display: none;
+  }
+
+  .aside h3 {
+    display: block;
+  }
+
+  .tux {
+    display: none;
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: block;
   }
 }
+
 /*
 @media {
   .navbar {
