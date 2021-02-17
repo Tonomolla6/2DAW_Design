@@ -7,7 +7,7 @@
 #segundo .destacado {
   color: #2e5f64;
   font-size: 1.4rem;
-  text-decoration: dashed;
+  text-decoration: underline;
   padding: 5px; }
 
 div {
