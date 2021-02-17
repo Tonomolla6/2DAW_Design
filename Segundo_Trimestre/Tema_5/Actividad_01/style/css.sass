@@ -1,0 +1,23 @@
+$primary_color: #ff8000
+$secundary_color: #2e5f64
+
+#primero .destacado
+  color: $primary_color
+  font-size: 1.6rem
+  text-align: center
+  padding: 6px
+
+#segundo .destacado
+  color: $secundary_color
+  font-size: 1.4rem
+  text-decoration: dashed
+  padding: 5px
+
+div
+  padding: 20px
+
+#segundo p:not(.destacado)::first-line
+  font-style: italic
+
+#parrafos
+  text-align: right
