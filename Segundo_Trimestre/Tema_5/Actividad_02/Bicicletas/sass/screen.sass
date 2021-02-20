@@ -1,0 +1,23 @@
+$text_color: #eee
+$text_color_hover: #fff
+$background_color: #666
+$background_color_element_hover: #888
+
+@mixin colours-text-background
+    color: $text_color
+    background-color: $background_color
+
+@mixin colours-text-background-hover
+    color: $text_color_hover
+    background-color: $background_color_element_hover
+
+@mixin box-sizing($value)
+    box-sizing: $value
+
+@mixin transitions($property,$duration, $timing)
+    transition: $property $duration $timing
+
+@mixin animations($name,$duration,$timing: linear)
+    animation: $name $duration $timing
+
+@import "menu"
