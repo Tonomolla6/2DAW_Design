@@ -1,0 +1,33 @@
+
+// Variables
+$colorText: #eee
+$colorTextHover: lighten($colorText, 10%)
+$colorBack: #15a
+$colorBackHover: lighten($colorBack, 10%)
+$colorTitulo: darken($colorBack, 10%)
+
+@import "mixin"
+@import "menu"
+@import "contenido"
+
+header
+  padding: 12px 30px
+  font-size: 1.8em
+  color: #444
+  background-color: #eee
+  font-weight: bold
+  text-shadow: 1px 1px 2px #aaa
+  font-family: Georgia, "Times New Roman", Times, serif
+
+footer
+  @include colours-text-background()
+  position: fixed
+  @include box-sizing(border-box)
+  width: 100%
+  bottom: 0px
+  padding: 5px
+
+body
+  padding: 0px
+  margin: 0px
+
