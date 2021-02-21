@@ -1,0 +1,24 @@
+@mixin colours-text-background
+    color: $colorText
+    background-color: $colorBack
+
+@mixin colours-text-background-hover
+    color: $colorTextHover
+    background-color: $colorBackHover
+
+@mixin box-sizing($value)
+    box-sizing: $value
+
+@mixin transitions($property,$duration, $timing)
+    transition: $property $duration $timing
+
+@mixin animations($name,$duration,$timing: linear)
+    animation: $name $duration $timing
+
+@mixin responsive($size)
+    @if $size == "medium"
+        @media (max-width: 1024px)
+            @content
+    @else if $size == "small"
+        @media (max-width: 800px)
+            @content

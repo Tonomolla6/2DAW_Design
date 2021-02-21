@@ -1,0 +1,67 @@
+%button-block 
+  @include box-sizing(border-box)
+  width: 100%
+  padding: 5px 10px
+  border-radius: 5px
+  border: 1px solid transparent
+  cursor: pointer
+
+%input-block
+  @include box-sizing(border-box)
+  width: 100%
+  border-radius: 5px
+  padding: 5px 10px
+  border: 1px solid #bbb
+
+$icons: (icon-menu, "../img/menu.png", 0px, 0px, 30px, 32px), (icon-news, "../img/news.png", 0px, -90px, 30px, 39px), (icon-money, "../img/money.png", 0px, -100px, 50px, 54px), (icon-contact, "../img/contact.png", 0px, 0px, 30px, 30px)
+
+
+@each $class, $url, $position_x, $position_y, $height, $width in $icons
+  .#{$class}
+    background-image: url("#{$url}")
+    background-position: $position_x $position_y
+    height: $height
+    width: $width
+  
+div
+  &#contenido 
+    padding: 30px 20px
+    @include responsive("medium") 
+      padding: 10px 20px
+  &.col-left 
+    @include box-sizing(border-box)
+    width: 30%
+    float: left
+    padding: 10px
+    .login 
+      input 
+        @extend %input-block
+      button 
+        @extend %button-block
+        @if $theme == light 
+          background-color: darken($colorBack, 10%)
+          color: #eee
+        @else 
+          background-color: lighten($colorBack, 20%)
+          color: #eee
+    @include responsive("medium") 
+      float: none
+      width: 100%
+  &.col-right 
+    @include box-sizing(border-box)
+    margin-left: 30%
+    width: 70%
+    padding: 10px
+    h1 
+      color: $colorTitulo
+      font-size: 1.6em
+    @include responsive("small") 
+      margin-left: 0
+      width: 100%
+    .button-action 
+      background-color: $colorBack
+      color: white
+      &:hover 
+        background-color: lighten($colorBack, 20%)
+i 
+  display: inline-block

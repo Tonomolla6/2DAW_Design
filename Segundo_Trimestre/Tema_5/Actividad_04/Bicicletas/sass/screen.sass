@@ -1,8 +1,19 @@
+// Variables globales
+$theme: dark
 
-// Variables
+// Definimos los iniciales
 $colorText: #eee
-$colorTextHover: lighten($colorText, 10%)
 $colorBack: #15a
+
+// Depende del tema actualizamos las variables
+@if $theme == dark
+  $colorBack: #138
+@else if $theme == light
+  $colorBack: #ddf
+  $colorText: #138
+
+// Moficiaciones globales
+$colorTextHover: lighten($colorText, 10%)
 $colorBackHover: lighten($colorBack, 10%)
 $colorTitulo: darken($colorBack, 10%)
 
@@ -31,10 +42,10 @@ body
   padding: 0px
   margin: 0px
 
-@keyframes iluminar
-  from
-    background-color: #15a
+@keyframes iluminar 
+  from 
+    background-color: #138
     color: #eee
   to 
-    background-color: #166cd8
+    background-color: #1744b5
     color: white
