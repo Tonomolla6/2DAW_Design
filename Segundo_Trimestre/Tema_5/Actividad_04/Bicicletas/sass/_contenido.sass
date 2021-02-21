@@ -28,6 +28,14 @@ div
     padding: 30px 20px
     @include responsive("medium") 
       padding: 10px 20px
+    .button-action 
+      @extend %button-block
+      @if $theme == light 
+        background-color: darken($colorBack, 10%)
+        color: #eee
+      @else 
+        background-color: lighten($colorBack, 20%)
+        color: #eee
   &.col-left 
     @include box-sizing(border-box)
     width: 30%
@@ -36,14 +44,13 @@ div
     .login 
       input 
         @extend %input-block
-      button 
-        @extend %button-block
-        @if $theme == light 
-          background-color: darken($colorBack, 10%)
-          color: #eee
-        @else 
-          background-color: lighten($colorBack, 20%)
-          color: #eee
+      button
+        box-sizing: border-box
+        width: 100%
+        padding: 5px 10px
+        border-radius: 5px
+        border: 1px solid transparent
+        cursor: pointer
     @include responsive("medium") 
       float: none
       width: 100%
@@ -58,10 +65,5 @@ div
     @include responsive("small") 
       margin-left: 0
       width: 100%
-    .button-action 
-      background-color: $colorBack
-      color: white
-      &:hover 
-        background-color: lighten($colorBack, 20%)
 i 
   display: inline-block

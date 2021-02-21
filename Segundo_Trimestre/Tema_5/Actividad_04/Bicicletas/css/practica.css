@@ -72,7 +72,7 @@ nav#mobile {
     nav#mobile {
       display: block; } }
 
-div.col-left .login button {
+div#contenido .button-action {
   box-sizing: border-box;
   width: 100%;
   padding: 5px 10px;
@@ -116,14 +116,21 @@ div#contenido {
   @media (max-width: 1024px) {
     div#contenido {
       padding: 10px 20px; } }
+  div#contenido .button-action {
+    background-color: #1c55e3;
+    color: #eee; }
 div.col-left {
   box-sizing: border-box;
   width: 30%;
   float: left;
   padding: 10px; }
   div.col-left .login button {
-    background-color: #1c55e3;
-    color: #eee; }
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer; }
   @media (max-width: 1024px) {
     div.col-left {
       float: none;
@@ -140,11 +147,6 @@ div.col-right {
     div.col-right {
       margin-left: 0;
       width: 100%; } }
-  div.col-right .button-action {
-    background-color: #138;
-    color: white; }
-    div.col-right .button-action:hover {
-      background-color: #1c55e3; }
 
 i {
   display: inline-block; }
